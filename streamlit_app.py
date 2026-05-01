@@ -209,11 +209,11 @@ html, body, [class*="css"] { font-family: "Inter", sans-serif; }
 # ── Data ──────────────────────────────────────────────────────────────────────
 @st.cache_data
 def load_data():
-    return pd.read_csv("data/championship_predictions_2025.csv")
+    return pd.read_csv("championship_predictions_2025.csv")
 
 @st.cache_data
 def load_future_data():
-    path = "data/future_predictions.csv"
+    path = "future_predictions.csv"
     if os.path.exists(path):
         return pd.read_csv(path)
     return pd.DataFrame()
